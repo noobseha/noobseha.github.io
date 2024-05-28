@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="screen.css"rel="stylesheet"media="screen">  
+    <link href="print.css"rel="stylesheet"media="print">
+    <title>반응형 웹</title>
+    <style>
+      /* 스마트폰 */
+      @media screen and (max-width:767px) {
+            body {
+                background-color: skyblue;
+            }
+        }
+        /* 테블릿 PC 세로 */
+        @media screen and (min-width:768px) and (max-width:959px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        /* 데스크탑 */
+        @media screen and (max-width:960px) {
+            body {
+                background-color: purple;
+            }    
+        }
+        * {
+            margin:0px;  padding:0px;  
+        }  
+        body {  
+            width:960px;  margin: 0 auto;  
+        }  
+        #menu {  
+            width:300px;  float:left;  
+        }  
+        #content {  
+            width:660px;  float:right;  
+        }  
+        li {  
+            list-style:none;  
+        }
+        /*스마트폰사이즈에서전부해제*/  
+        @media screen and (max-width:767px) {
+              body {  
+                width:auto;  
+            }  
+            #menu {
+                width:auto;  
+                float:none; /*모바일기기에서위쪽*/  
+            }  
+            #content {  
+                width:auto;  float:none;  
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>강아지풀 |</li>
+            <li>패랭이꽃 |</li>
+            <li>양귀비꽃 |</li>
+        </ul>
+    </div>
+<div id="content">
+    <h3>강아지풀</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSbyKeVVXzjAOs3og_WamxbTSNICqdA2YrZ4W4Uvk64w&s" width="80%">
+    <p>길가나 들에서 자라는 풀로써 꽃은 9월에 피고 연한 녹색 또는 자주색입니다.</p>
+    <p>고양이가 매우 좋아하는 물건이기에 고양이와 연관된 소재로 많이 나타난다. 단순히 고양이뿐 아니라 고양이 속성이 있는 인물에게도 먹히는 듯 하다</p>
+    <p>한자로는 구미초라고 한다</p>
+</div>
+</body>
+</html>
